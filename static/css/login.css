@@ -1,0 +1,82 @@
+body{
+    background-image: url("images.jpg"); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    
+}
+.div1{
+    width:320px;
+    height:450px;
+    background:black;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10%;
+    
+}
+.img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left:calc(50% - 50px);
+
+}
+h1{
+    color:white;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+}
+.div1 p{
+    margin: 0;
+    padding:0;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.div1 input{
+    width:100%;
+    margin-bottom: 20px;
+}
+.div1 input[type="text"],input[type="password"]{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background:transparent;
+    outline:none;
+    height:40px;
+    color: white;
+
+}
+.div1 input[type="submit"]{
+    border:none;
+    outline:none;
+    height:40px;
+    background: #fb2525;
+    color:#fff;
+    font-size:18px;
+    border-radius: 20%;
+}
+.div1 input[type="submit"]:hover{
+    cursor:pointer;
+    background:blue;
+    color:#000;
+}
+.div1 a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    color: darkgrey;
+   
+}
+.div1 a:hover{
+    color:blue;
+}

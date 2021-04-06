@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login_Page</title>
+    <style>
+        .background{
+            background-image: url("{{ url_for('static',filename='images/image.jpeg')}}");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            height:900px;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+</head>
+<body>
+    <h1 class="background"></h1>>
+    <div class="div1"> 
+     <img src="images.png" alt="" class="img">
+     <h1>Login Here</h1>
+     <form action="{{ url_for('datacheck')}}" method="POST">
+         <p>Username</p>
+         <input type="text" placeholder="Username" required name="username">
+         <br>
+         {% if message==1 %}
+         <label for="" style="color: red;">Invalid Username</label>
+         {% endif %}
+         <p>Password</p>
+         <input type="password" placeholder="Password" required name='password'>
+         <br>
+         {% if message==2 %}
+         <label for="" style="color: red;">Invalid Password</label>
+         {% endif %}
+         {% if message==3 %}
+         <label for="" style="color: red;">Invalid Password and Username</label>
+         {% endif %}
+         <input type="submit" value="Login">
+         
+         <a href="{{ url_for('sign_up1')}}">Sign Up</a>
+     </form>
+    </div>
+  
+    <script>
+    
+    function preventBack(){window.history.forward();}
+     setTimeout("preventBack()", 0);
+     window.onunload=function(){null};
+ </script>
+    </script>    
+</body>
+</html>

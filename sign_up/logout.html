@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Graduates</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/open-iconic-bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css')}}">
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/aos.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/ionicons.min.css')}}">
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/flaticon.csscss/icomoon.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+	<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+      
+    }
+    .div1{
+        margin-left:1px;
+        border-radius: 10px;
+        
+      
+    }
+    .div2{
+        margin-left:1px;
+        border-radius: 10px;
+        display:none;
+        
+        
+    }
+    .div3{
+        margin-left:1px;
+        border-radius: 10px;
+        
+        display:none;
+    }
+    
+    .div5{
+        margin-left:1px;
+        border-radius: 10px;
+        display:none;
+    }
+    .div6{
+      margin-left:1px;
+        border-radius: 10px;
+        display:none;
+    }
+  </style>
+</head>
+<body>
+    <div class="bg-top navbar-light d-flex flex-column-reverse">
+    	<div class="container py-3">
+    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
+    			<div class="col-md-4 d-flex align-items-center py-4">
+    				<a class="navbar-brand" href="#"> </a>
+				</div>
+				<div class="col-lg-8 d-block">
+		    		
+						    <div class="text">
+								<span style="margin-left:20px;"><img src="{{ url_for('static',filename='images/fastro.png')}}" alt=""></span>
+								<ul class="nav navbar-nav navbar-right">
+									<li style="float:right"><a href="{{ url_for('index1') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+								  </ul>
+						    	
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+				
+	    		<div class="col-lg-8 d-block">
+		    		
+			    </div>
+		    </div>
+		</div>
+		
+		  <div class="top-social-menu py-2 bg-light">
+		  	<div class="container">
+		  		<div class="row">
+			    	<div class="col">
+			    		<p class="social mb-0">
+			    			
+			    		</p>
+			    	</div>
+			    	
+			    </div>
+		  	</div>
+		  </div>
+    </div>
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+	        	<li class="nav-item active"><a href="{{ url_for('log')}}" class="nav-link">Home</a></li>
+	        	
+	        	<li class="nav-item"><a href="{{ url_for('servicesout1')}}" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="{{ url_for('contactout')}}" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+      <div class="jumbotron"  style="background-image: url(images.jpg);background-repeat: no-repeat;background-size: cover;">
+        <div class="container text-center">
+          <h1 style="padding-bottom: 20px;">Welcome to Fastro</h1>      
+         
+        </div>
+      </div>
+      <div class="jumbotron div1" style="border:solid 1px;">
+        <div class="container text-center">
+          <h2>Are you done with your Graduation?</h2>
+            <button class="b1"  onclick="call()">Yes</button>
+            <button class="b2"  onclick="call3()">No</button>                
+         
+        </div>
+      </div>
+      <div class="jumbotron div2" id="id1" style="border:solid 1px;">
+        <div class="container text-center">
+          <h2>Are you employed?</h2>
+            <button class="b1"  onclick="call3()">Yes</button>
+            <button class="b2" onclick="call4()">No</button>                
+         
+        </div>
+      </div>
+      <div class="jumbotron div5" id="id5">
+          <h6>Click here to check out our exclusive courses at:  </h6><br><br><a href="{{ url_for('servicesout1')}}">Fastro_Services</a>
+      </div>
+      <div class="jumbotron div6" id="id6">
+        <h6>Lets search jobs for you. You can also go through the services of our website: </h6><br><br><a href="{{ url_for('servicesout1')}}">Fastro_Services</a>
+    </div>
+      <script>
+          function call(){
+            document.getElementById("id1").style.display="flex"
+            document.getElementById("id1").style.background="none";
+            var element=document.getElementById("id1");
+            element.scrollIntoView();
+            
+          }
+          function call1(){
+            document.getElementById("id2").style.display="flex"
+          
+            var element=document.getElementById("id2");
+            element.scrollIntoView();
+            
+          }  
+         
+          function call3(){
+            document.getElementById("id5").style.display="flex"
+            document.getElementById("id5").style.background="none";
+            var element=document.getElementById("id5");
+            element.scrollIntoView();
+            
+          } 
+          function call4(){
+            document.getElementById("id6").style.display="flex"
+            document.getElementById("id6").style.background="none";
+            var element=document.getElementById("id6");
+            element.scrollIntoView();
+            
+          }       
+      </script>
+      <script>
+        function preventBack(){window.history.forward();}
+        setTimeout("preventBack()", 0);
+        window.onunload=function(){null};
+        </script>
+        
+</body>
+</html>

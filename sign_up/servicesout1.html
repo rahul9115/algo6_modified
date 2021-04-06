@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fastro-Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/open-iconic-bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css')}}">
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/aos.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/ionicons.min.css')}}">
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/icomoon.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+  </head>
+  <body>
+	  <div class="bg-top navbar-light d-flex flex-column-reverse">
+    	<div class="container py-3">
+    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
+				<a class="navbar-brand" href="{{ url_for('index1')}}">Fastro<span>Follow your passion</span></a>
+    			<div class="col-md-4 d-flex align-items-center py-4">
+    				
+    			</div>
+	    		<div class="col-lg-8 d-block">
+		    		<div class="row d-flex">
+					    
+					    
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+		 
+    </div>
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      
+        </form>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+	        	<li class="nav-item"><a href="{{url_for('log')}}" class="nav-link">Home</a></li>
+	        	<li class="nav-item active"><a href="{{ url_for('servicesout1')}}" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="{{ url_for('contactout')}}" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({{ url_for('static',filename='images/bg_1.jpg') }});">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Services</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{{ url_for('index1') }}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Services <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">Services</span>
+            <h2 class="mb-4">Why Choose Us?</h2>
+            <p>Because we offer the most appropriate solution to gradutes essential problems. If you are looking to fly high in your career you are at the right place.</p>
+          </div>
+        </div>
+  			<div class="row tabulation mt-4 ftco-animate">
+  				<div class="col-md-4">
+						<ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
+						  <li class="nav-item text-left">
+						    <a class="nav-link active py-4" data-toggle="tab" href="#services-1"><span class="flaticon-analysis mr-2"></span>Management</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-2"><span class="flaticon-business mr-2"></span>Engineering</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-3"><span class="flaticon-insurance mr-2"></span>Humanities and Social Sciences</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-4"><span class="flaticon-money mr-2"></span>Finance</a>
+						  </li>
+						  
+						</ul>
+					</div>
+					<div class="col-md-8">
+						<div class="tab-content">
+						  <div class="tab-pane container p-0 active" id="services-1">
+						  	<div class="img" style="background-image: url({{ url_for('static',filename='images/project-2.jpg')}});"></div>
+							  <h3><a href="#">Management</a></h3>
+							  <br>
+							  <a href="{{url_for('courses')}}" style="padding:10px;color:black;text-decoration: none;border:solid 1px;">Know More</a> 
+						  	<p></p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-2">
+						  	<div class="img" style="background-image: url({{ url_for('static',filename='images/project-3.jpg')}});"></div>
+							  <h3><a href="#">Engineering</a></h3>
+							  <br>
+							  <a href="{{url_for('courses')}}" style="padding:10px;color:black;text-decoration: none;border:solid 1px;">Know More</a> 
+						  	<p></p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-3">
+						  	<div class="img" style="background-image: url({{ url_for('static',filename='images/project-4.jpg')}});"></div>
+						  	<h3><a href="#">Humanities and Social Sciences
+							</a></h3>
+							<br>
+							<a href="{{url_for('courses')}}" style="padding:10px;color:black;text-decoration: none;border:solid 1px;">Know More</a> 
+						  	<p></p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-4">
+						  	<div class="img" style="background-image: url({{ url_for('static',filename='images/project-5.jpg')}});"></div>
+							  <h3><a href="#">Finance</a></h3>
+							 <br> 
+							  <a href="{{url_for('courses')}}" style="padding:10px;color:black;text-decoration: none;border:solid 1px;">Know More</a> 
+						  	<p></p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-5">
+						  	<div class="img" style="background-image: url({{ url_for('static',filename='images/project-6.jpg')}});"></div>
+						  	
+						</div>
+					</div>
+				</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 d-flex">
+						<div class="services-2 border rounded text-center ftco-animate">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-analysis"></span></div>
+							<div class="text media-body">
+								<h3>Management</h3>
+								
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex">
+						<div class="services-2 border rounded text-center ftco-animate">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-business"></span></div>
+							<div class="text media-body">
+								<h3>Engineering</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex">
+						<div class="services-2 border rounded text-center ftco-animate">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-insurance"></span></div>
+							<div class="text media-body">
+								<h3>Humanities and Social Sciences</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex">
+						<div class="services-2 border rounded text-center ftco-animate">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-money"></span></div>
+							<div class="text media-body">
+								<h3>Finance</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/jquery-migrate-3.0.1.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/popper.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.easing.1.3.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.waypoints.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.stellar.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/aos.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.animateNumber.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/scrollax.min.js')}}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{{ url_for('static',filename='js/google-map.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/main.js')}}"></script>
+    
+  </body>
+</html>

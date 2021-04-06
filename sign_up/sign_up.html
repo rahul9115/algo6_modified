@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign_Up_BookLand</title>
+    <link rel="stylesheet" href="static/css/sign_up.css">
+</head>
+<body>
+    <form onsubmit="return check();" action="{{ url_for('datastore1')}}"  class="con" method="POST" style="margin-top: 100px;">
+        <div class="container">
+          <h1 style="margin-right: 200px;">Register</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+      
+          <label for="email"><b>First_Name</b></label>
+          <input type="text" placeholder="Enter Name" name="f_name" required>
+          
+          <label for="email"><b>Middle_Name</b></label>
+          <input type="text" placeholder="Enter Middle_Email" name="m_name" required>
+          
+          <label for="email"><b>Last_Name</b></label>
+          <input type="text" placeholder="Enter Last_Name" name="l_name" required>
+      
+          <label for="psw"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+          
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="password" placeholder="Enter Password" name="password" required>
+
+          <label for="psw"><b>Repeat Password</b></label>
+          <input type="password" id="r_password" placeholder="Enter Password Again" name="r_password" required>
+          <br>
+          <label for="" style="visibility:hidden;color: red;" id="match">Passwords Dont Match</label>
+          <br>
+          <label for="psw-repeat"><b>Sex</b></label>
+          <p>
+          <select name="option">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          </p>
+          <label for="psw"><b>Country</b></label>
+          <input type="text" placeholder="Enter Country" name="country" required>
+          
+          <label for="psw-repeat"><b>City</b></label>
+          <input type="text" placeholder="Enter City" name="city" required>
+
+          <label for="psw-repeat"><b>Pincode</b></label>
+          <input type="text" placeholder="Enter pincode" name="pincode" required>
+          <hr>
+         <button type="submit" class="registerbtn" >Register</button>
+         <p class="p1">Already have an account? <a href="{{ url_for('login1')}}">Sign in</a>.</p>
+        </div>
+      </form>
+      <script>
+        function check()
+        {
+      var password=document.getElementById('password').value;
+      var r_password=document.getElementById('r_password').value;
+      if(password!=r_password)
+          {
+            document.getElementById('match').style.visibility="visible";
+            return false;
+          }
+      else
+        return true;    
+        }
+      </script>
+</body>
+</html>
